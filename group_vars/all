@@ -1,6 +1,6 @@
 # Variables for all hosts
 
-iface: eth1
+iface: eth0
 
 master_ip: "{{ hostvars[groups['master'][0]]['ansible_' + iface]['ipv4']['address'] }}"
 master_fqdn: "{{ hostvars[groups['master'][0]]['ansible_fqdn'] }}"
